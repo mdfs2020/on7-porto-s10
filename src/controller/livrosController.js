@@ -15,7 +15,7 @@ const getByCategoria = (req, res) => {
     const categoria = req.params.categoria;
     console.log(categoria);
    
-    res.status(200).send(livros.filter(livro => livro.categoria === categoria));
+    res.status(200).send(livros.filter(livro => livro.categoria == categoria));
 };
 
 const postLivro = (req, res) => {
